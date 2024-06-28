@@ -30,9 +30,9 @@ public class Demo {
 		Select month = new Select(wd.findElement(By.xpath("//select[@placeholder='Month']")));
 		Select date = new Select(wd.findElement(By.xpath("//select[@id='daybox']")));
 		
+		Thread.sleep(10000);
+		year.selectByValue("10000");
 		Thread.sleep(2000);
-		year.selectByValue("2000");
-		Thread.sleep(1000);
 		month.selectByIndex(9);
 		Thread.sleep(1000);
 		date.selectByIndex(20);
